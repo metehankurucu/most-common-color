@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='app.css') }}"
+    />
 
     <title>Find Dominant Color</title>
-    <style>
-      body {
-        background-color: #f0f3f4;
-      }
-      .main {
-        min-width: 500px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .color-name {
-        position: absolute;
-        left: 85px;
-        top: 110px;
-        color: #f1f1f1;
-        font-size: 24px;
-      }
-      .img {
-        max-height: 300px;
-      }
-      .color {
-        /* background-color: yellowgreen; */
-        height: 250px;
-        width: 250px;
-        border-radius: 10px;
-      }
-    </style>
   </head>
   <body class=" ">
     <div class="container main">
@@ -83,10 +57,7 @@
       </form>
       <br />
       <br />
-      <br />
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

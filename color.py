@@ -17,7 +17,7 @@ def rgb_to_hex(r, g, b):
     return "".join(hex_vals)
 
 
-def dominant_color(img_url, resize_ratio=20, round_group=20):
+def get_color(img_url, resize_ratio=20, round_group=20):
     response = requests.get(img_url)
     im = Image.open(BytesIO(response.content))
 
@@ -52,4 +52,4 @@ def count_colors(arr, group=20):
 
 if __name__ == "__main__":
     image = "https://images.unsplash.com/photo-1591520323419-7dc0c8ea23e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-    print("#" + dominant_color(image))
+    print("#" + get_color(image))
