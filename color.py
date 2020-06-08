@@ -9,11 +9,11 @@ def rgb_to_hex(r, g, b):
                "7", "8", "9", "A", "B", "C", "D", "E", "F"]
     hex_vals = ['f', 'f', 'f', 'f', 'f', 'f']
     hex_vals[0] = hex_str[r // 16]
-    hex_vals[1] = hex_str[int((r/16 - (r // 16))*16)]
+    hex_vals[1] = hex_str[r % 16]
     hex_vals[2] = hex_str[g // 16]
-    hex_vals[3] = hex_str[int((g/16 - (g // 16))*16)]
+    hex_vals[3] = hex_str[g % 16]
     hex_vals[4] = hex_str[b // 16]
-    hex_vals[5] = hex_str[int((b/16 - (b // 16))*16)]
+    hex_vals[5] = hex_str[b % 16]
     return "".join(hex_vals)
 
 
